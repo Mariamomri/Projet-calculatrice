@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
+
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap; /*Marre d'écrire flex-direction et flex-wrap, un raccourci le flex-flow*/
+  font-weight: bold;
+  text-align: center; 
+
+  font-family: "Playwrite HU", cursive;
+  font-optical-sizincg: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.wrapper > * { /* selectionne tous les enfants de .wrapper */
+  padding: 10px;
+  flex: 1 100%; /* raccourci de flex-grow, flex-shrink et flex-basis. Cela garantit qu'il occupe toute la largeur disponible par défaut*/
+}
+
+section{
+  padding: 10px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/*max-width, si l'écran est inf ou égal alors {...}*/
+/*max-width = desktop-first */
+/*min-width, si l'écran est supérieur ou égal, alors {...}*/
+/*min-width = mobile-first il piu consegliato */
+/* all, print, screen, speech */
+
+@media all and (min-width: 600px) { 
+  .aside { flex: 1 0 0; } /* flex-grow:1 = peut grandir, flex-shrink:0 = peut se rétrécir et que sa taille initiale est fixée à 0%  flex-basis:0 "flex colum lungo"*/
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; } 
+  .aside-1 { order: 1; } 
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}
+
+/* lier les deux esempio*/
+@media all and (min-width: 600px) and (max-width: 1024px){
+  body{
+    color: red;
+  }
+}
+

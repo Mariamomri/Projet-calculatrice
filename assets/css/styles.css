@@ -1,0 +1,374 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(120deg, #F0EFEF 75%, #FAAFFF 25%);
+    color: #222;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #FAAFFF; 
+    color: black;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+}
+
+.titheader{
+    font-size: 40px;
+    font-weight: bold;
+    color: #192965;
+}
+
+h1, h2{
+    margin-top: 0%;
+    color:#192965;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.smain{
+    position: relative;
+}
+
+.coriandoli{
+    position: absolute;
+    z-index: 1;
+    left:15%;
+    top:-80px;
+    width: 70%;
+    height: 100%;
+}
+
+/*tableau profil*/
+th{
+    background-color: #FAAFFF;
+    font-weight: bold;
+}
+td{
+    background-color: #BBCFFF;
+    text-align: center;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+/***********************/
+
+.textIndex{
+    margin: 5% 15% 5% 15%;
+    text-align: center;
+    color: #192965;
+    font-weight: bold;
+}
+
+/*aside1*/
+.aside-1 {
+    background-color:#BBCFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.ongle2{
+    font-size: 15px;
+}
+
+
+.aside-2 {
+    background-color:#BBCFFF;
+}
+
+.log{
+    margin-top: 50px;
+    /* background-color: #FAAFFF; */
+    border-radius: 20%;
+    padding: 10px;
+    animation: changeCouleur 3s infinite alternate;
+}
+
+@keyframes changeCouleur {
+form{
+    transform: scale(0);
+    border: 1px dotted deeppink;
+    }
+    to {
+        background-color: #FAAFFF;
+        transform: scale(1.1) ;
+        border: 6px dotted deeppink;
+    }
+}
+
+/* Navigation active */
+nav a {
+    display: flex;
+    flex-direction: column;
+    color: #192965;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover, nav a.active {
+    color:deeppink;
+    font-weight: bold;
+    
+}
+
+
+.login-main {
+    background-image: url("../../assets/images/sfondologin.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/********* card  login ****/
+.login{
+    /* border: 3px solid  #BBCFFF; */
+    margin: 25%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card {
+    background:  white;
+    border: 1.5px solid #FAAFFF;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(218, 32, 172, 0.1), 0 1.5px 8px rgba(0,0,0,0.08);
+    width: 90%;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+    border: 3px solid #FAAFFF;
+    box-shadow: 0 8px 32px rgba(218, 32, 178, 0.18), 0 2px 12px rgba(0,0,0,0.12);
+    border-color: #FAAFFF;
+    transform: scale(1.04);
+}
+
+
+/*text error*/
+.textError{
+    color: red;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* input form e calculatrice*/
+input{
+    margin: 10px;
+    margin-left: 0px;
+}
+
+
+/* button form */
+.btn-form {
+    font-family: "Playwrite HU", cursive;
+    text-align: start;
+    padding: 10px 20px;
+    background-image: url("../../assets/images/equal sign with red .png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #111;
+    margin: 0;
+    padding-left: 50px ;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 2px 8px rgba(218,165,32,0.10);
+}
+
+.btn-form:hover {
+    /* font-weight: bold; */
+    padding-left: 20px;
+    color: deeppink;
+    background:#BBCFFF;
+    transform: translateY(-2px) scale(1.1);
+    box-shadow: 0 4px 16px rgba(218,165,32,0.15);
+}
+
+/* button form login */
+.btn-form-log {
+    font-family: "Playwrite HU", cursive;
+    text-align: start;
+    padding: 10px 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: deeppink;
+    border-radius: 10px;
+    background-color: #BBCFFF;
+    margin: 0;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 2px 8px rgba(218,165,32,0.10);
+}
+
+.btn-form-log:hover {
+    /* font-weight: bold; */
+    padding-left: 20px;
+    background:#7193e4;
+    transform: translateY(-2px) scale(1.1);
+    box-shadow: 0 4px 16px rgba(218,165,32,0.15);
+}
+
+
+/**calculatrice*/
+
+.calcul-result{
+    margin-top: 0%;
+    color: deeppink;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+
+/*mon profil*/
+
+.monProfil{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.textop{
+    color: deeppink;
+    /* font-size: 20px; */
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.img-profil{
+    border-radius: 50%;
+    border: 5px solid #FAAFFF;
+    box-shadow: 0 4px 24px rgba(218,32,172,0.1), 0 1.5px 8px rgba(0,0,0,0.08);
+    z-index: 2;
+}
+
+/*footer*/
+footer {
+    background: #192965;
+    color: #fff;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    box-shadow: 0 -2px 20px rgba(218,165,32,0.10);
+}
+
+.am{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.footerlink a {
+    margin: 10px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footerlink a:hover, .footerlink a.active {
+    color:deeppink;
+    font-weight: bold;
+}
+
+
+
+/*nav pour underline hover pourla page calculatrice body */
+
+.alineamentoCalc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.cal1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+ul { 
+    margin: 0 auto;
+    padding: 0; 
+    list-style: none; 
+    width: 300px;
+    text-align: center;
+}
+
+li { 
+    position: relative; 
+    padding: 15px 0;
+}
+
+.cal   {
+    background: linear-gradient(to right, rgb(128, 128, 219), purple);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    font-weight: bold;
+    display: inline-block;
+    padding: 15px 10px;
+    position: relative;
+}
+
+.cal:after  {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 5px;
+    left: 50%;
+    position: absolute;
+    background: linear-gradient(to right, rgb(128, 128, 219), #FAAFFF);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+/* Stile per il link attivo */
+.cal:hover:after  { 
+    width: 100%; 
+    left: 0; 
+}
+
+
+@media screen and (max-height: 600px) {
+	ul {
+		margin-top: 40px;
+	}
+}
+
