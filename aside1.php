@@ -27,6 +27,12 @@
       <!-- base de donnees -->
       <a href="./baseDeDonnees" class="nav-item <?php if ($nav === "baseDeDonnees"): ?> active<?php endif ?>">Base de Données</a>
 
+      <!-- tableau utilisateur -->
+      <a href="./tabUser.php" class="nav-item <?php if ($nav === "tabUser"): ?> active<?php endif ?>">Tableau des utilisateurs</a>
+
+      <!-- formulaire pour ajouter un user -->
+      <a href="./tabUser.php" class="nav-item <?php if ($nav === "formulaireUser"): ?> active<?php endif ?>">Formulaire</a>
+
     <?php endif ?>
 
     <!-- monProfile  -->
