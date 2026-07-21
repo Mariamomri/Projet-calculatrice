@@ -31,7 +31,11 @@
       <a href="./tabUser.php" class="nav-item <?php if ($nav === "tabUser"): ?> active<?php endif ?>">Tableau des utilisateurs</a>
 
       <!-- formulaire pour ajouter un user -->
-      <a href="./tabUser.php" class="nav-item <?php if ($nav === "formulaireUser"): ?> active<?php endif ?>">Formulaire</a>
+      <a href="./formulaireUser.php" class="nav-item <?php if ($nav === "formulaireUser"): ?> active<?php endif ?>">Formulaire User</a>
+
+      <!-- formulaire pour ajouter un user -->
+      <a href="./id.php" class="nav-item <?php if ($nav === "id"): ?> active<?php endif ?>">ID user</a>
+
 
     <?php endif ?>
 

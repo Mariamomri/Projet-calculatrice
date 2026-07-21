@@ -313,8 +313,20 @@ try {
 // 11) Essayez de créer une page qui permet de rajouter un utilisateur, via à un formulaire,
 // à la table users.
 
+// fatto in formulaireUser.php 
+
+// 12) Essayez de créer une page dans laquelle on écrit un ID dans un formulaire et qui affiche l'utilisateur qui a cet ID dans un formulaire. S'il ne trouve pas l'ID il doit afficher un message.
 
 
+
+
+//13) Essayer de créer une page dans laquelle on écrit un ID dans un formulaire et qui affiche l'utilisateur qui a cet ID dans un formulaire. S'il ne trouve pas l'ID il doit afficher un message. Par contre ici on pourra modifier les champs sauf l'id.
+
+
+//14) Essayez de créer une page qui permet d'afficher un utilisateur en tapant son ID. Et qui permet par la suite de supprimer cet utilisateur, avec un petit message de confirmation.
+
+
+// 15) Essayez de créer plusieurs sous onglet à BDD dans votre site calculatrice. Afficher tous utilisateurs, Chercher un utilisateur, Ajouter un utilisateur, Modifier un utilisateur et Supprimer un utilisateur.
 
 
 ?>
